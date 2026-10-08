@@ -1,0 +1,4 @@
+#!/usr/bin/env bash
+# Ар бир коммиттен мурун сыр маалыматтарды текшерет.
+# Иштетүү (бир жолу): git config core.hooksPath .githooks
+exec "$(git rev-parse --show-toplevel)/scripts/check-secrets.sh" --staged
